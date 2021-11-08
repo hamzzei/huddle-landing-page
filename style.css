@@ -10,68 +10,81 @@ html {
 body {
     background: url(bg-mobile.svg), hsl(257, 40%, 49%);
     background-repeat: no-repeat;
+    background-size: contain;
 
     height: 100vh;
     width: 100vw;
     margin: 0;
 
     display: grid;
-    grid-template-columns: 2rem auto 2rem;
-    grid-template-rows: 15vh 30vh auto 10vh;
+    grid-template-columns: 2.2rem auto 2.2rem;
+    grid-template-rows: 5rem repeat(2, auto) 5rem;
 }
 
 header, #img_section, main, footer {
     grid-column: 2 / 3;
+    align-self: center;
 }
 
 header {
     grid-row: 1 / 2;
     text-align: left;
-    align-self: center;
+    margin-top: 1rem;
 }
 
 #img_section {
+    margin: 1.5rem 0.2rem 0;
     grid-row: 2 / 3;
-    align-self: top;
 }
 
 main {
     grid-row: 3 / 4;
-    align-self: center;
     font-family: 'Open Sans', sans-serif;
+    align-self: start;
+    margin-top: 1.6rem;
 }
 
 footer {
     grid-row: 4 / 5;
-    align-self: center;
 }
 
 #logo{
-    width: 30vw;
+    width: 7.8rem;
 }
 
 #main_img {
     width: 100%;
+    max-width: 40rem;
 }
 
 #main_heading {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+}
+
+#main_text {
+    line-height: 1.6rem;
+    font-weight: 400;
 }
 
 #register_btn {
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
     background: #fff;
     border: none;
     border-radius: 1.5rem;
     color: hsl(257, 40%, 49%);
-    font-size: 0.9rem;
-    padding: 0.9rem 5rem;
+    font-size: 0.8rem;
+    padding: 0.7rem 5rem;
+    box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.4);
+    cursor: pointer;
 }
 
 .icon {
     color: #fff;
     padding: 0.4rem 0.25rem;
-    margin: 0 0.2rem;
+    margin: 0 0.25rem;
     border: 1px solid #fff;
     border-radius: 50%;
 }
