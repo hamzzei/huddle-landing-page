@@ -10,7 +10,7 @@ html {
 body {
     background: url(bg-mobile.svg), hsl(257, 40%, 49%);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100vw auto;
 
     height: 100vh;
     width: 100vw;
@@ -18,10 +18,10 @@ body {
 
     display: grid;
     grid-template-columns: 2.2rem auto 2.2rem;
-    grid-template-rows: 5rem repeat(2, auto) 5rem;
+    grid-template-rows: 5rem repeat(3, auto) 2rem;
 }
 
-header, #img_section, main, footer {
+header, #img_section, main, #icon_section, footer {
     grid-column: 2 / 3;
     align-self: center;
 }
@@ -33,7 +33,7 @@ header {
 }
 
 #img_section {
-    margin: 1.5rem 0.2rem 0;
+    margin: 2.2rem 0.2rem 0;
     grid-row: 2 / 3;
 }
 
@@ -41,11 +41,16 @@ main {
     grid-row: 3 / 4;
     font-family: 'Open Sans', sans-serif;
     align-self: start;
-    margin-top: 1.6rem;
+    margin-top: 2rem;
+}
+
+#icon_section {
+    grid-row: 4 / 5;
+    margin-top: 1rem;
 }
 
 footer {
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
 }
 
 #logo{
@@ -76,7 +81,7 @@ footer {
     border-radius: 1.5rem;
     color: hsl(257, 40%, 49%);
     font-size: 0.8rem;
-    padding: 0.7rem 5rem;
+    padding: 0.8rem 5rem;
     box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.4);
     cursor: pointer;
 }
@@ -95,4 +100,82 @@ footer {
 }
 .attribution a { 
     color: #fff; 
+}
+
+
+@media (min-width: 700px) {
+
+    body {
+        background: url(bg-desktop.svg), hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+        background-size: auto 100vh;   
+
+        display: grid;
+        grid-template-columns: 4.3rem auto auto 4.3rem;
+        grid-template-rows: 5rem auto auto 2rem;
+    }
+
+    header {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        margin-top: 5.1rem;
+    }
+
+    #img_section {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        text-align: left;
+        width: 44.4rem;
+        margin-top: 6.5rem;
+    }
+
+    main {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        align-self: center;
+        margin-left: 3rem;
+        margin-bottom: 4rem;
+        text-align: left;
+    }
+
+    #icon_section {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+        text-align: right;
+        align-self: end;
+    }
+
+    footer {
+        grid-column: 2 / 4;
+        grid-row: 4 / 5;
+    }
+
+    #logo {
+        width: 13.5rem;
+    }
+
+    #main_img {
+        max-width: 100%;
+    }
+
+    #main_heading {
+        font-size: 2.48rem;
+        line-height: 3.7rem;
+        margin-top: 2.2rem;
+        margin-right: 2rem;
+        margin-bottom: 1.6rem;
+    }
+
+    #main_text {
+        font-size: 1.13rem;
+        margin: -0.4rem 1rem 1.4rem 0;
+        line-height: 1.7rem;
+    }
+
+    #register_btn {
+        margin-top: 0.3rem;
+        padding: 1rem 4rem;
+        font-size: 1.25rem;
+        border-radius: 3rem;
+    }
 }
