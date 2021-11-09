@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screenshot-Huddle-landing-page)
+![](./Screenshot-Huddle-landing-page.png)
 
 ### Links
 
@@ -59,7 +59,7 @@ The most challenging part of this build was getting everything to line up as it 
 
 I used a program called PureRef to group all my reference designs onto one page and make it easier to switch between them. Later I found that by scaling the reference designs to the same size as my design in Firefox, I could overlap the PureRef window on top of my design and compare the two to quite a high level of accuracy. 
 
-![](./Screenshot-PureRef-example)
+![](./Screenshot-PureRef-example.png)
 
 It took a long time to adjust my design to match both the mobile and the desktop references, but I am pretty happy with the final outcome even if it is still not 100% perfect.
 
@@ -76,7 +76,7 @@ In future projects I aim to work more methodically, making sure that the mobile 
 ### Useful resources
 
 - [Font Awesome (sizing icons info)](https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/sizing-icons) - Font Awesome's website has some very useful docs on how to get the most out of their icons. 
-- [PureRef](https://www.example.com) - Along with the Responsive Design Mode in Firefox, PureRef was incredibly useful for helping me align my own page with the reference images.
+- [PureRef](https://www.pureref.com/) - Along with the Responsive Design Mode in Firefox, PureRef was incredibly useful for helping me align my own page with the reference images.
 -[w3schools (background-image properties)](https://www.w3schools.com/cssref/pr_background-image.asp) - w3schools is always my go-to resource when I am unsure on how to properly use a property.
 
 ## Author
