@@ -14,9 +14,7 @@ This is a solution to the [Huddle landing page with single introductory section 
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,20 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./Screenshot-Huddle-landing-page)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://hamzzei.github.io/)
+- Live Site URL: (https://github.com/hamzzei/huddle-landing-page)
 
 ## My process
 
@@ -50,62 +40,46 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The project used CSS Grid to create a layout that I had a high amount of control over. I was pleased with how responsive I managed to make the page when scaling between the two sizes. This was done by adding several min() Math functions through the code rather than setting fixed sizes. I would have used relative units instead of this method (such as vh/vw or %) if I hadn't got such specific reference designs that I was trying to match. 
 
-To see how you can add code snippets, see below:
+By using min() I could choose a relative unit for scaling, and then declare that once a certain viewport size had been reached, the item would display at a fixed size.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+#img_section {
+  width: min(50vw, 44.4rem);
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+The most challenging part of this build was getting everything to line up as it does in the reference designs. If this were a project that I was working on without such a specific final design to match, I think I would have settled on many aspects of the page much sooner than I did in this project. 
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I used a program called PureRef to group all my reference designs onto one page and make it easier to switch between them. Later I found that by scaling the reference designs to the same size as my design in Firefox, I could overlap the PureRef window on top of my design and compare the two to quite a high level of accuracy. 
+
+![](./Screenshot-PureRef-example)
+
+It took a long time to adjust my design to match both the mobile and the desktop references, but I am pretty happy with the final outcome even if it is still not 100% perfect.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Overall I'm happy with the final outcome of this project, but there are still things I want to continue improving on. I needed to look up reference documents on Font Awesome's website to work out how to use the icons properly, which hopefully I won't need to do as much after using them in more projects. 
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I also needed to look up some properties regarding the background images, for example I didn't know about background-attachment until I looked it up on w3schools. I will aim to commit more of the background-image properties to memory as I use them in more projects.
+
+While I overall aimed to build the project using a mobile-first workflow, I got into some issues by moving on too quickly to building the desktop design before realising that the mobile design needed to be tweaked. After correcting the mobile design, the desktop design that I had spent a long time on getting just right was now misaligned again, and so I had to fix that, too. 
+
+In future projects I aim to work more methodically, making sure that the mobile design is correct before moving on, and by doing this I hope that my overall build time will be reduced.
 
 ### Useful resources
 
 - [Font Awesome (sizing icons info)](https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/sizing-icons) - Font Awesome's website has some very useful docs on how to get the most out of their icons. 
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [PureRef](https://www.example.com) - Along with the Responsive Design Mode in Firefox, PureRef was incredibly useful for helping me align my own page with the reference images.
+-[w3schools (background-image properties)](https://www.w3schools.com/cssref/pr_background-image.asp) - w3schools is always my go-to resource when I am unsure on how to properly use a property.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [hamzzei](https://hamzzei.github.io/)
+- Frontend Mentor - [@hamzzei](https://www.frontendmentor.io/profile/hamzzei)
